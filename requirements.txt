@@ -1,0 +1,8 @@
+Django
+djangorestframework
+psycopg2
+South
+django-cors-headers
+bpython
+django-extensions
+Werkzeug
