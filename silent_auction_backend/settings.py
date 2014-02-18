@@ -93,7 +93,7 @@ APPEND_SLASH=False
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
-if DEBUG:
+if not os.environ.has_key('DATABASE_URL'):
   os.environ["DATABASE_URL"] = "postgres://localhost:5432/silent_auction"
 
 import dj_database_url
